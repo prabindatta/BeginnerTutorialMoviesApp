@@ -6,7 +6,10 @@
 
 @import './styles/init-css';
 @import './styles/colors';
-@import 'primeflex/primeflex.scss';
+@import '~primeflex/primeflex.css';
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/md-dark-indigo/theme.css';
+@import '~primeng/resources/primeng.min.css';
 
 /* 
 * External CSS
@@ -57,4 +60,9 @@ a {
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.container {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }

@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GenresComponent } from './pages/genres/genres.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
 import { MoviesComponent } from './pages/movies/movies.component';
-import { TvshowsComponent } from './pages/tvshows/tvshows.component';
+import { TvshowsComponent } from './pages/tv-shows/tv-shows.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'genres',
     component: GenresComponent
+  },
+  {
+    path: 'movie/:id',
+    component: MovieDetailsComponent
   },
   {
     path: '**',

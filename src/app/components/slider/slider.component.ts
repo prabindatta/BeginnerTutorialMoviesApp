@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
-import { Movie } from '../../models/movie';
+import { Item } from '../item/item';
 
 @Component({
   selector: 'slider',
@@ -9,13 +9,16 @@ import { Movie } from '../../models/movie';
   animations: [trigger('slideFade', [state('void', style({ opacity: 0 })), transition('void <=> *', [animate('1s')])])]
 })
 export class SliderComponent implements OnInit {
-  @Input() items: Movie[] = [];
+  @Input() items: Item[] = [];
+  @Input() isBanner: Boolean = false;
 
   curentSlideIndex: number = 0;
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.curentSlideIndex = ++this.curentSlideIndex % this.items.length;
-    }, 5000);
+    if (!this.isBanner) {
+      setInterval(() => {
+        this.curentSlideIndex = ++this.curentSlideIndex % this.items.length;
+      }, 5000);
+    }
   }
 }

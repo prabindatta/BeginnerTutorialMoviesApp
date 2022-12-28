@@ -7,11 +7,16 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MoviesComponent } from './pages/movies/movies.component';
-import { TvshowsComponent } from './pages/tvshows/tvshows.component';
+import { TvshowsComponent } from './pages/tv-shows/tv-shows.component';
 import { GenresComponent } from './pages/genres/genres.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ItemBannerComponent } from './components/item-banner/item-banner.component';
+import { ItemComponent } from './components/item/item.component';
+import { PaginatorModule } from 'primeng/paginator';
+import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -22,9 +27,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MoviesComponent,
     TvshowsComponent,
     GenresComponent,
-    SliderComponent
+    SliderComponent,
+    ItemBannerComponent,
+    ItemComponent,
+    MovieDetailsComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, PaginatorModule, TabViewModule],
   providers: [],
   bootstrap: [AppComponent]
 })

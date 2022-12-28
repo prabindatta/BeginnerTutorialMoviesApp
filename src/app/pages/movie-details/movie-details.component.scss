@@ -1,0 +1,39 @@
+@import '../../../styles/colors';
+
+:host ::ng-deep {
+  .p-tabview-nav {
+    justify-content: center;
+
+    li.p-highlight .p-tabview-nav-link {
+      color: $lightGray;
+      background: $bgColorLight;
+    }
+  }
+}
+
+.poster {
+  max-width: 100%;
+}
+
+.overview {
+  line-height: 1.2rem;
+}
+
+.stat {
+  display: flex;
+  margin-bottom: 11px;
+  .label {
+    width: 150px;
+    font-weight: bold;
+  }
+
+  .value {
+    color: $primaryTextColor;
+    span {
+      &:not(:last-child):after {
+        content: ',';
+        margin-right: 9px;
+      }
+    }
+  }
+}

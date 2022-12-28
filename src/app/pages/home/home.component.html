@@ -1,2 +1,4 @@
-<slider [items]="movies"></slider>
-<!-- <pre>{{ movies | json }}</pre> -->
+<slider [items]="upcomingMovies"></slider>
+<item-banner [items]="nowPlayingMovies" title="Now Playing Movies"></item-banner>
+<item-banner [items]="popularMovies" title="Popular"></item-banner>
+<item-banner [items]="topRatedMovies" title="Top Rated Movies"></item-banner>

@@ -46,4 +46,8 @@ Used Prime Flex for responsive and mobile supported components in App. [Refer](h
 
 ## CSS Gradient
 
-Used css gradient [Refer](https://cssgradient.io/)
+Used css gradient generator [Refer](https://cssgradient.io/)
+
+## Prime NG
+
+Used Prime NG for UI components [Refer](https://www.primefaces.org/primeflex/setup)
