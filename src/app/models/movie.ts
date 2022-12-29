@@ -41,6 +41,7 @@ export interface MovieVideoDto {
 export interface MovieVideo {
   site: string;
   key: string;
+  name: string;
 }
 
 export interface MovieImages {

@@ -37,3 +37,33 @@
     }
   }
 }
+
+.actor {
+  display: inline-grid;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+  }
+
+  .name {
+    // display: inline;
+    text-align: center;
+    margin: auto 0;
+  }
+}
+
+:host ::ng-deep {
+  .p-carousel {
+    .p-carousel-content .p-carousel-prev,
+    .p-carousel .p-carousel-content .p-carousel-next {
+      background: $primaryTextColor;
+    }
+
+    .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+      background: $primaryTextColor;
+      color: $lightGray;
+    }
+  }
+}
